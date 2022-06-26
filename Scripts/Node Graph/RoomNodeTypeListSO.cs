@@ -15,10 +15,10 @@ public class RoomNodeTypeListSO : ScriptableObject
     public List<RoomNodeTypeSO> list;
 
     #region Validation
-#if UNITY_EDITOR 
+#if UNITY_EDITOR
     private void OnValidate()
     {
-        HelperUtillities.ValidateCheckEnumerableValues(this, nameof(list), list);
+        HelperUtilities.ValidateCheckEnumerableValues(this, nameof(list), list);
     }
 #endif
     #endregion
