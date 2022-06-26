@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "RoomNodeType_",menuName = "Scriptable Objects/Dungeon/Room Node Type")]
+[CreateAssetMenu(fileName = "RoomNodeType_", menuName = "Scriptable Objects/Dungeon/Room Node Type")]
 public class RoomNodeTypeSO : ScriptableObject
 {
     public string roomNodeTypeName;
@@ -37,12 +37,11 @@ public class RoomNodeTypeSO : ScriptableObject
     public bool isNone;
 
     #region Validation
-#if UNITY_EDITOR 
+#if UNITY_EDITOR
     private void OnValidate()
     {
-        HelperUtillities.ValidateCheckEmptyString(this, nameof(roomNodeTypeName), roomNodeTypeName);
+        HelperUtilities.ValidateCheckEmptyString(this, nameof(roomNodeTypeName), roomNodeTypeName);
     }
 #endif
     #endregion
-
 }
