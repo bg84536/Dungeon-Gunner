@@ -96,4 +96,6 @@ public static class Settings
     #region HIGHSCORES
     public const int numberOfHighScoresToSave = 100;
     #endregion
+
+    
 }
